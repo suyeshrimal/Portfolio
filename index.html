@@ -14,7 +14,7 @@
     }
 
     body {
-        background-color: rgb(152, 130, 173);
+        background-color: rgb(42, 10, 71);
         color: white;
         font-family: sans-serif;
     }
@@ -24,7 +24,7 @@
         justify-content: space-around;
         align-items: center;
         height: 80px;
-        background-color: rgb(103, 84, 125);
+        background-color: rgb(107, 11, 216);
     }
     nav ul{
         display: flex;
@@ -34,22 +34,39 @@
         list-style: none;
         margin: 0 23px;
     }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+        text-decoration: none;
+        color: rgb(82, 110, 138);
+        font-size: 1.05rem;
+    }
     .left{
         font-size: 1.8 rem;
     }
     .firstsection{
         display: flex;
         justify-content: space-around;
-        margin: 23px 0;
+        align-items: center;
+        margin: 10px 0;
     }
-    .firstsection div{
-        width: 30%;
+    .firstsection > div{
+        width: 45%;
     }
     .leftsection{
-        background-color: red;
+        font-size: 2.4rem;
     }
-    .rightsection{
-        background-color: red;
+    .rightsection img{
+        width: 80%;
+        margin: 50px 0;
+    }
+    .name{
+        color: blueviolet;
+    }
+    #element{
+        color: blueviolet;
     }
 </style>
 <body>
@@ -58,11 +75,11 @@
             <div class="left">Suyesh's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -70,12 +87,22 @@
     <main>
         <section class="firstsection">
             <div class="leftsection">
-                Hi, I am Suyesh
-                <div>And I am a Web Developer</div>
+                Hi, I am <span class="name">Suyesh</span>
+                <div>And I am a</div>
+                <span id="element"></span>
             </div>
-            <div class="rightsection"></div>
+            <div class="rightsection">
+                <img src="fig.png" alt="">
+            </div>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Student','Learner'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 
 </html>
