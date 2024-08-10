@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Suyesh's Portfolio </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I am</h3>
+            <h1>Suyesh</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <a href="D:\MyResume.pdf" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="fig.png"
+                alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="aboutme.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Web Developer</h3>
+            <p>I specialize in creating responsive and visually appealing websites that provide seamless user
+                experiences.I have a strong command of front-end technologies like HTML, CSS, and JavaScript,
+                allowing me to design and implement dynamic, interactive web pages.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading"><span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>I offer professional web development services, specializing in creating custom websites and web
+                    applications tailored to meet your specific needs.
+                    From responsive design to robust back-end functionality,
+                    I handle every aspect of web development to ensure your online presence is both visually appealing
+                    and highly functional</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-crop'></i>
+                <h3>Graphic Designing</h3>
+                <p>I also provide graphic design services, creating visually stunning and engaging designs that align
+                    with your brand identity.
+                    Whether you need logos, marketing materials, or website graphics, I focus on delivering creative and
+                    impactful designs
+                    that effectively communicate your message and capture your audience's attention.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio"id="portfolio">
+        <h2 class="heading">Latest<span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="p1.jpg"alt="">
+                <div class="portfolio-layer">
+                    <h4>Project 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cum quod nihil, asperiores minus ipsa maxime vero eveniet mollitia minima magnam exercitationem delectus animi non debitis recusandae suscipit sapiente. At!</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="p2.jpg"alt="">
+                <div class="portfolio-layer">
+                    <h4>Project 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod doloremque dignissimos alias, porro impedit nostrum amet. Esse molestiae reprehenderit dolorem voluptas repudiandae quos. Iure nisi praesentium repellendus porro aliquid?</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="p3.jpg"alt="">
+                <div class="portfolio-layer">
+                    <h4>Project 3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quis unde possimus cupiditate itaque dolores autem rerum quidem reiciendis quia illo, aliquam, quas quo tempore non similique harum, corrupti saepe.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="bg.jpg"alt="">
+                <div class="portfolio-layer">
+                    <h4>Project 4</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vel maxime officiis inventore earum! Deleniti blanditiis et beatae ex maxime distinctio placeat tempore, dolorem ab facere consectetur at tenetur est?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span></span></h2>
+
+        <form action="#" name="submit-to-google-sheet">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="email" name="Email Address" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="Mobile Number" placeholder="Mobile Number">
+                <input type="text" name="Email Subject" placeholder="Email Subject">
+            </div>
+            <textarea name="Your Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <span id="msg"></span>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Suyesh | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
